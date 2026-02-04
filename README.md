@@ -9,7 +9,7 @@ Instead of designing task-specific agent teams with handcrafted roles and verbos
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/<YOUR_ORG_OR_NAME>/AgentPrimitives.git
+git clone AgentPrimitives.git
 cd AgentPrimitives
 ```
 

@@ -20,3 +20,10 @@ conda create -n agentprims python=3.10 -y
 conda activate agentprims
 pip install -r requirements.txt
 ```
+Using the HF cache directory to avoid repeated downloads:
+
+```bash
+export HF_HOME=/path/to/huggingface
+export TRANSFORMERS_CACHE=$HF_HOME
+export HF_DATASETS_CACHE=$HF_HOME
+```

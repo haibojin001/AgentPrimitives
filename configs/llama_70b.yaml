@@ -1,0 +1,28 @@
+model:
+  name: "DeepSeek-R1-Distill-Llama-70B"
+  family: "llama"
+  max_context_length: 65536
+  temperature: 0.6
+  top_p: 0.95
+  seed: 42
+
+token_limits:
+  single_agent: 4096
+  text_mas: 8192
+  latent_mas: 8192
+  primitives_mas: 8192
+
+inference:
+  num_samples: 1
+  max_new_tokens: 2048
+  repetition_penalty: 1.1
+
+kv_cache:
+  enable: true
+  cache_strategy: "rolling"
+  cache_window: 16384
+
+logging:
+  save_intermediate: true
+  save_reasoning_trace: true
+  log_level: "INFO"
